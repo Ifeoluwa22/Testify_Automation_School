@@ -10,3 +10,5 @@ else if (side1 === side2 || side2 === side3 || side1 === side3) {
 } else {
     console.log("Scalene triangle")
 }
+
+// In this task we use the if condition to calculate the type of triangles based on the set conditions

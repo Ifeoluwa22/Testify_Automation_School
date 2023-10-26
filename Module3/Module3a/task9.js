@@ -12,3 +12,5 @@ function calculateAreaOfRectangle(length,width){
 
 
 calculateAreaOfRectangle(10, 5);
+
+// This task involves the use of functions to produce the Area of a rectangle by logging it to the console
