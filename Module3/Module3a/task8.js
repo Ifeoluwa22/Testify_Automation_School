@@ -4,3 +4,5 @@ for (let number = 1; number <= 20; number = number+1){
     }
 
 }
+
+// This task involves finding the odd numbers from 1 to 20 using a for loop
