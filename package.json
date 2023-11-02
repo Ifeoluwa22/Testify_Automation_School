@@ -1,0 +1,19 @@
+{
+  "name": "mytests",
+  "version": "1.0.0",
+  "description": "Ifes Package for automation tests",
+  "main": "task16.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ifeoluwa22/Testify_Automation_School.git"
+  },
+  "author": "Ife",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ifeoluwa22/Testify_Automation_School/issues"
+  },
+  "homepage": "https://github.com/Ifeoluwa22/Testify_Automation_School#readme"
+}
