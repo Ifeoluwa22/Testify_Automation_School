@@ -6,4 +6,4 @@ const books = {
     reading: true
  }
 
- console.log(books.title)
+ console.log(books)

@@ -13,4 +13,5 @@ const books = {
     }
  }
 
- console.log(books.title)
+ books.toggleReadingStatus()
+ console.log(books.reading)
