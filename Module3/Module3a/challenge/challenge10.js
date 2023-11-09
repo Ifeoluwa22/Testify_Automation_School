@@ -9,24 +9,3 @@ function newFunc(positiveNumbers) {
 let newNumbers = numbers.filter(newFunc)
 
 console.log(newNumbers)
-
-/*
-let numbers = [7, -2, 3, 4, 5, -1, 6];
-
-function newFunc(numbers){
-
-      while (numbers.length && numbers[numbers.length - 1] < 0) {
-       numbers.pop();
-     }
-     for (var i = numbers.length - 1; i >= 0; i--) {
-       if (numbers[i] < 0) {
-
-        numbers[i] = numbers[x.length - 1];
-        numbers.pop();
-      }
-    }
-    return numbers;
-  }
-
-    
-    console.log(newFunc(numbers)); */
