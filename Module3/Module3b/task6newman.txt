@@ -1,0 +1,62 @@
+newman run https://api.postman.com/collections/15781712-38651ae3-d036-4ecd-bd50-ed6394a36f97?access_key=xxxxxxxxxxxxxxxxxxx -e TAS_Env.json
+newman
+
+Simple books API collection
+
+□ GET
+└ Get Status
+  GET https://simple-books-api.glitch.me [200 OK, 258B, 2.7s]
+  √  Response status code is 200
+
+└ Get Books
+  GET https://simple-books-api.glitch.me/books [200 OK, 631B, 528ms]
+  √  Response status code is 200
+  √  Verify the id number of a non-fiction book with the name Untamed.
+
+└ Get a single book
+  GET https://simple-books-api.glitch.me/books/4? [200 OK, 338B, 933ms]
+  √  Status Code is 200
+
+└ Get an order
+  GET https://simple-books-api.glitch.me/orders/3H0XkyYJPOmspVKXiVVCF [200 OK, 393B, 1445ms]
+  √  Status Code is 200
+
+└ Get all orders
+  GET https://simple-books-api.glitch.me/orders [200 OK, 2.21kB, 530ms]
+  √  Status is 200
+
+□ POST
+└ Place a book order
+  POST https://simple-books-api.glitch.me/orders [201 Created, 267B, 1116ms]
+  √  Status Code is 201
+
+└ Register an API Client
+  POST https://simple-books-api.glitch.me/api-clients/ [409 Conflict, 283B, 614ms]
+
+□ DELETE
+└ Delete an order
+  DELETE https://simple-books-api.glitch.me/orders/3H0XkyYJPOmspVKXiVVCF [204 No Content, 111B, 1481ms]
+  √  Status Code is 204
+
+→ Update an order
+  PATCH https://simple-books-api.glitch.me/orders/LqZgIhOAA1hYoeyKTfDqr/ [404 Not Found, 270B, 1126ms]
+
+┌─────────────────────────┬─────────────────────┬────────────────────┐
+│                         │            executed │             failed │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│              iterations │                   1 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│                requests │                   9 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│            test-scripts │                  26 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│      prerequest-scripts │                  18 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│              assertions │                   8 │                  0 │
+├─────────────────────────┴─────────────────────┴────────────────────┤
+│ total run duration: 12.3s                                          │
+├────────────────────────────────────────────────────────────────────┤
+│ total data received: 2.93kB (approx)                               │
+├────────────────────────────────────────────────────────────────────┤
+│ average response time: 1169ms [min: 528ms, max: 2.7s, s.d.: 655ms] │
+└────────────────────────────────────────────────────────────────────┘

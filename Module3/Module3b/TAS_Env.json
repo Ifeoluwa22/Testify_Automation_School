@@ -1,0 +1,21 @@
+{
+	"id": "9f21ac86-18aa-45ee-bb9c-a981ac4ef171",
+	"name": "TAS_Env",
+	"values": [
+		{
+			"key": "bookId",
+			"value": "1",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "baseUrl ",
+			"value": "https://simple-books-api.glitch.me",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2023-11-17T03:58:03.103Z",
+	"_postman_exported_using": "Postman/10.20.0"
+}
