@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "8f13802e-c16a-4dca-beb4-1469693c896f",
-		"name": "TAS API Collection",
+		"_postman_id": "38651ae3-d036-4ecd-bd50-ed6394a36f97",
+		"name": "Simple books API collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "15781712"
 	},
@@ -18,6 +18,7 @@
 							"  pm.response.to.have.status(200);",
 							"});",
 							"",
+							"postman.setNextRequest(\"Place a book order\")",
 							"",
 							""
 						],
@@ -29,9 +30,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}",
+					"raw": "{{baseUrl }}",
 					"host": [
-						"{{baseUrl}}"
+						"{{baseUrl }}"
 					]
 				}
 			},
@@ -46,11 +47,11 @@
 						"exec": [
 							"pm.test('Response status code is 200', function () {",
 							"    pm.response.to.have.status(200);",
-							"});",
+							"})",
 							"",
 							"pm.test('Verify the id number of a non-fiction book with the name Untamed.', function () {",
 							"    const responseData = pm.response.json();",
-							"    //pm.expect(responseData).to.be.an('array');",
+							"    pm.expect(responseData).to.be.an('array');",
 							"    let bookId;",
 							"    responseData.forEach(book => {",
 							"        if (book.name === 'Untamed' && book.type === 'non-fiction') {",
@@ -58,7 +59,9 @@
 							"        }",
 							"    });",
 							"    pm.expect(bookId).to.equal(5);",
-							"});"
+							"})",
+							"",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -68,9 +71,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/books",
+					"raw": "{{baseUrl }}/books",
 					"host": [
-						"{{baseUrl}}"
+						"{{baseUrl }}"
 					],
 					"path": [
 						"books"
@@ -110,9 +113,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{baseUrl}}/books/:bookId?",
+					"raw": "{{baseUrl }}/books/:bookId?",
 					"host": [
-						"{{baseUrl}}"
+						"{{baseUrl }}"
 					],
 					"path": [
 						"books",
@@ -165,9 +168,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{baseUrl}}/orders/:orderId",
+					"raw": "{{baseUrl }}/orders/:orderId",
 					"host": [
-						"{{baseUrl}}"
+						"{{baseUrl }}"
 					],
 					"path": [
 						"orders",
@@ -214,9 +217,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{baseUrl}}/orders",
+					"raw": "{{baseUrl }}/orders",
 					"host": [
-						"{{baseUrl}}"
+						"{{baseUrl }}"
 					],
 					"path": [
 						"orders"
@@ -277,7 +280,7 @@
 							"    pm.response.to.have.status(201)\r",
 							"});\r",
 							"\r",
-							""
+							"postman.setNextRequest(null)"
 						],
 						"type": "text/javascript"
 					}
@@ -304,7 +307,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"bookId\": 1,\r\n  \"customerName\": \"Ife\"\r\n}",
+					"raw": "{\r\n  \"bookId\": {{bookId}},\r\n  \"customerName\": \"Ife\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -312,9 +315,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{bookId}}/orders",
+					"raw": "{{baseUrl }}/orders",
 					"host": [
-						"{{bookId}}"
+						"{{baseUrl }}"
 					],
 					"path": [
 						"orders"
@@ -349,9 +352,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{bookId}}/orders/:orderId/",
+					"raw": "{{baseUrl }}/orders/:orderId/",
 					"host": [
-						"{{bookId}}"
+						"{{baseUrl }}"
 					],
 					"path": [
 						"orders",
@@ -396,9 +399,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{bookId}}/orders/:orderId",
+					"raw": "{{baseUrl }}/orders/:orderId",
 					"host": [
-						"{{bookId}}"
+						"{{baseUrl }}"
 					],
 					"path": [
 						"orders",
