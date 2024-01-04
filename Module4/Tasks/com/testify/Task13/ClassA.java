@@ -14,6 +14,7 @@ public class ClassA {
         }
 
         public ClassA(String newFruits, int newNumber, boolean newInSeason){
+
             inSeason = newInSeason;
         }
     }
