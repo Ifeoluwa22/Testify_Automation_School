@@ -1,7 +1,9 @@
 package challenge;
 
+import java.util.Arrays;
+
 public class challenge8 {
-    ublic static void main(String[] args) {
+    public static void main(String[] args) {
         int[] input = {4, 3, 1, 6, 2, 5, 9, 8, 7, 1, 3, 6, 9, 2, 4, 7, 8, 5};
 
         System.out.println("Original array: " + Arrays.toString(input));

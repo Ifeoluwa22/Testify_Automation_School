@@ -2,31 +2,27 @@ package challenge;
 
 public class challenge1 {
     public static void main(String[] args) {
-        String str1 = "racecar";
-        String str2 = "10801";
+        String firstText = "racecar"; // instantiating the string in a variable
+        String secondText = "10801"; // One of the methods of checking if a number is a Palindrome is by converting it to a string
 
-        if (isPalindrome(str1)) {
-            System.out.println(str1 + " is a palindrome.");
+        if (isPalindrome(firstText)) {
+            System.out.println(firstText + " is a palindrome.");
         } else {
-            System.out.println(str1 + " is not a palindrome.");
+            System.out.println(firstText + " is not a palindrome.");
         }
 
-        if (isPalindrome(str2)) {
-            System.out.println(str2 + " is a palindrome.");
+        if (isPalindrome(secondText)) {
+            System.out.println(secondText + " is a palindrome.");
         } else {
-            System.out.println(str2 + " is not a palindrome.");
+            System.out.println(secondText + " is not a palindrome.");
         }
     }
 
-    // Function to check if a string is a palindrome
-    private static boolean isPalindrome(String str) {
-        // Removing spaces and converting to lowercase for case-insensitive comparison
-        String cleanStr = str.replaceAll("\\s", "").toLowerCase();
-
-        //String cleanStr = str1;
-        int length = cleanStr.length();
-        for (int i = 0; i < length / 2; i++) {
-            if (cleanStr.charAt(i) != cleanStr.charAt(length - 1 - i)) {
+    // Now we write a function to check if the string is a palindrome
+    private static boolean isPalindrome (String str) {
+        int length = str.length() - 1;
+        for (int i = 0; i < length; i++ , length --) {
+            if (str.charAt(i) != str.charAt(length)) {
                 return false;
             }
         }
