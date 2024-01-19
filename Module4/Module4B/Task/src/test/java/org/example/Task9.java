@@ -4,7 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Task6 {
+import javax.xml.validation.Validator;
+
+public class Task9 {
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Documents\\TESTIFY\\Testify_Automation_School\\Module4\\Module4B\\Task\\src\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -16,10 +18,16 @@ public class Task6 {
         driver.findElement(By.cssSelector("#login-button")).click();
         Thread.sleep(3000);
 
-        driver.findElement(By.cssSelector("#add-to-cart-sauce-labs-bike-light")).click();
-        Thread.sleep(3000);
-        driver.findElement(By.cssSelector("div.page_wrapper div:nth-child(1) div.header_container:nth-child(1) div.primary_header div.shopping_cart_container:nth-child(3) > a.shopping_cart_link")).click();
-        Thread.sleep(3000);
-        driver.findElement(By.cssSelector("#checkout")).click();
+        driver.navigate().back();
+        Thread.sleep(5000);
+
+        String Val = driver.findElement(By.cssSelector("#login-button")).getCssValue("login-button");
+        System.out.println(Val);
+
+        driver.navigate().forward();
+        Thread.sleep(5000);
+
+        String shoe = driver.findElement(By.cssSelector("div.page_wrapper div.inventory_container div.inventory_list div.inventory_item:nth-child(1) div.inventory_item_description div.inventory_item_label a:nth-child(1) > div.inventory_item_name")).getText();
+        System.out.println(shoe);
     }
 }
