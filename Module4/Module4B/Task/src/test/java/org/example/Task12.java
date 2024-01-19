@@ -23,7 +23,5 @@ public class Task12 {
         resize.clickAndHold(smallBox).moveByOffset(300, 500).build().perform();
 
 
-
-
     }
 }
