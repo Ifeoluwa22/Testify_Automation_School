@@ -1,5 +1,6 @@
-package org.example;
+package org.example.Task19.Task18;
 
+import org.example.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
