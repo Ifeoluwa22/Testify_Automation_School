@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Test-Suite">
+
+    <test name = "Positive Test cases">
+        <classes>
+            <class name = "org.example.Task17.aNavigateHomepage" />
+            <class name = "org.example.Task17.cNavigateForms" />
+            <class name = "org.example.Task17.eNavigateWidgets" />
+            <class name = "org.example.Task17.gNavigateInteractions" />
+        </classes>
+    </test>
+
+</suite>

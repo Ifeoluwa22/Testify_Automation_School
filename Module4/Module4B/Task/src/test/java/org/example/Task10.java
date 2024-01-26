@@ -13,6 +13,7 @@ public class Task10 {
 
         driver.findElement(By.xpath("//a[contains(text(),'Dialog')]")).click();
         Thread.sleep(5000);
+
         driver.switchTo().frame(0);
         Thread.sleep(5000);
         driver.findElement(By.xpath("//body/div[1]/div[1]/button[1]")).click();
