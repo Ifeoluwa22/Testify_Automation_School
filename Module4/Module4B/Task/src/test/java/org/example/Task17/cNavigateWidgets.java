@@ -10,7 +10,7 @@ import org.testng.asserts.SoftAssert;
 
 import java.util.concurrent.TimeUnit;
 
-public class aNavigateHomepage {
+public class cNavigateWidgets {
     WebDriver driver = null;
 
     @BeforeClass
@@ -23,20 +23,20 @@ public class aNavigateHomepage {
     }
 
     @Test
-    public void NavigateToElements() throws InterruptedException {
+    public void NavigateAndAssertWidgets() throws InterruptedException {
         driver.get("https://demoqa.com/");
-        driver.findElement(By.xpath("//body/div[@id='app']/div[1]/div[1]/div[2]/div[1]/div[1]")).click();
+        driver.findElement(By.xpath("//body/div[@id='app']/div[1]/div[1]/div[2]/div[1]/div[4]")).click();
         Thread.sleep(5000);
         String header = driver.findElement(By.xpath("//body/div[@id='app']/div[1]/div[1]/div[1]/div[1]")).getText();
-        SoftAssert one = new SoftAssert();
-        one.assertEquals(header, "Elements");
-        one.assertAll();
+        SoftAssert three = new SoftAssert();
+        three.assertEquals(header, "Widgets");
+        three.assertAll();
     }
-
 
     @AfterClass
     public void close() {
         System.out.println("Navigate to element");
         driver.quit();
     }
+
 }

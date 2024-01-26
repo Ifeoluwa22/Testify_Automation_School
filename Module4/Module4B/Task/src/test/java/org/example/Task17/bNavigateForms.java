@@ -10,7 +10,7 @@ import org.testng.asserts.SoftAssert;
 
 import java.util.concurrent.TimeUnit;
 
-public class cNavigateForms {
+public class bNavigateForms {
 
         WebDriver driver = null;
 

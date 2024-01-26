@@ -19,10 +19,10 @@ public class Task15 {
         driver = new ChromeDriver(); //launch browser
         driver.manage().window().maximize();    // maximize browser
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
+        System.out.println("Start Browser");
     }
     @Test
-    public void searchTestify() throws InterruptedException {
+    public void google() throws InterruptedException {
         driver.get("https://google.com");
         driver.findElement(By.cssSelector("#APjFqb")).sendKeys("testify ltd");
         Thread.sleep(5000);
@@ -32,16 +32,20 @@ public class Task15 {
     }
 
     @Test
-    public void searchColor() {
+    public void searchColor() throws InterruptedException {
             driver.get("https://www.mcdonalds.com/us/en-us.html");
-         String solordd =   driver.findElement(By.cssSelector("#button-ordernow")).getCssValue("background-color");
-            System.out.println(solordd);
+            Thread.sleep(5000);
+         String colordd =   driver.findElement(By.cssSelector("#button-ordernow")).getCssValue("background-color");
+            System.out.println(colordd);
+        System.out.println("Mcdonalds run");
     }
 
 
     @AfterClass
     public void quitChrome() {
-            driver.quit();
+
+        driver.quit();
+        System.out.println("Close browser");
     }
 
 
