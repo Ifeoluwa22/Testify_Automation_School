@@ -10,26 +10,20 @@ public class ClassA {
     WebDriver driver = null;
 
 
-    @Test(groups = {"one"})
-    public void verifyUserOnDemoPage() throws InterruptedException {
+    @Test(groups = {"first"})
+    public void verifyHomepage() throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\hp\\Desktop\\Testify\\CI_CD_Clone\\ci_cdtestify\\Module4Bselenium\\src\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Documents\\TESTIFY\\Testify_Automation_School\\Module4\\Module4B\\Task\\src\\chromedriver.exe");
 
-        //Launch browser
-        driver = new ChromeDriver();
-
-        //To Maximize the browser
-        driver.manage().window().maximize();
-
+        driver = new ChromeDriver(); //Launch browser
+        driver.manage().window().maximize();  //To Maximize the browser
 
         driver.get(" https://demoqa.com ");
-
         SoftAssert assertHomepage = new SoftAssert();
-        String myHomePage = driver.findElement(By.cssSelector(".banner-image")).getText();
+        String HomePage = driver.findElement(By.cssSelector(".banner-image")).getText();
 
-        assertHomepage.assertEquals(myHomePage, "Selenium Online Training");
-        System.out.println("HomePage for Demo QA site");
-
+        assertHomepage.assertEquals(HomePage, "Selenium Online Training");
+        System.out.println("This is the homepage");
         Thread.sleep(5000);
     }
 

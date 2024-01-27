@@ -11,7 +11,7 @@ public class ClassA {
     WebDriver driver = null;
 
 
-    @Test(groups = {"one"})
+    @Test(groups = {"first"})
     public void openBrowser() throws InterruptedException {
 
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\hp\\Desktop\\Testify\\CI_CD_Clone\\ci_cdtestify\\Module4Bselenium\\src\\chromedriver.exe");

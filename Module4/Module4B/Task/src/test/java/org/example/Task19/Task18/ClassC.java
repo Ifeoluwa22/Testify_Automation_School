@@ -17,7 +17,7 @@ public class ClassC {
     @BeforeClass
     public void openBrowser() throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\hp\\Desktop\\Testify\\CI_CD_Clone\\ci_cdtestify\\Module4Bselenium\\src\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Documents\\TESTIFY\\Testify_Automation_School\\Module4\\Module4B\\Task\\src\\chromedriver.exe");
 
         //Launch browser
         driver = new ChromeDriver();

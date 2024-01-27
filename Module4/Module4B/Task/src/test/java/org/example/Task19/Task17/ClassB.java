@@ -10,25 +10,20 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import java.util.concurrent.TimeUnit;
+
 public class ClassB {
     WebDriver driver = null;
 
 
     @BeforeClass
-    public void openBrowser() throws InterruptedException {
+    public void launchChrome() throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\hp\\Desktop\\Testify\\CI_CD_Clone\\ci_cdtestify\\Module4Bselenium\\src\\chromedriver.exe");
-
-        //Launch browser
-        driver = new ChromeDriver();
-
-        //To Maximize the browser
-        driver.manage().window().maximize();
-
-        //Add implicit wait
-
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Documents\\TESTIFY\\Testify_Automation_School\\Module4\\Module4B\\Task\\src\\chromedriver.exe");
+        driver = new ChromeDriver(); //Launch browser
+        driver.manage().window().maximize();  //To Maximize the browser
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS); //Add implicit wait
         driver.get(" https://demoqa.com ");
-
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,200)");
 
@@ -38,19 +33,16 @@ public class ClassB {
 
     @Test
     public void demoAlertFraWindows() throws InterruptedException {
-        WebElement gAlertFraWin = driver.findElement(By.xpath("//body/div[@id='app']/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]/*[1]"));
+        WebElement Alert = driver.findElement(By.xpath("//body/div[@id='app']/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]/*[1]"));
 
-        gAlertFraWin.click();
+        Alert.click();
 
-        String alertFrameWin = driver.findElement(By.cssSelector(".main-header")).getText();
+        String FrameWindowsPage = driver.findElement(By.cssSelector(".main-header")).getText();
 
         Thread.sleep(3000);
-
         SoftAssert assertElements = new SoftAssert();
-
-        assertElements.assertEquals(alertFrameWin, "Alerts, Frame & Windows");
-
-        System.out.println("Alert, Frames & Windows Page is visible ");
+        assertElements.assertEquals(FrameWindowsPage, "Alerts, Frame & Windows");
+        System.out.println("We are now on the Alert, Frames & Windows Page ");
 
     }
 
