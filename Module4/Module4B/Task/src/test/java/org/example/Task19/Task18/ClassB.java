@@ -32,7 +32,7 @@ public class ClassB {
         //launch URl
         driver.get("https://www.saucedemo.com/");
 
-        System.out.println("---Launch Website---");
+        System.out.println("Launch Website");
 
         SauceDemoLoginPage login = new SauceDemoLoginPage(driver);
         login.getUsername().sendKeys("standard_user");
