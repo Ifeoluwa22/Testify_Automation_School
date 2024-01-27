@@ -13,7 +13,7 @@ public class Task15 {
 
     WebDriver driver = null;
 
-    @BeforeClass
+    @BeforeMethod
     public void launchChrome() {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Documents\\TESTIFY\\Testify_Automation_School\\Module4\\Module4B\\Task\\src\\chromedriver.exe");
         driver = new ChromeDriver(); //launch browser
@@ -41,7 +41,7 @@ public class Task15 {
     }
 
 
-    @AfterClass
+    @AfterMethod
     public void quitChrome() {
 
         driver.quit();
