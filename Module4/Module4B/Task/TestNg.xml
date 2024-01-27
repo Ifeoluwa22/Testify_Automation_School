@@ -4,15 +4,11 @@
 <suite name = "Test-Suite">
 
     <test name = "Positive Test cases">
-        <groups>
-            <run>
-                <include name="homepage tests"/>
-            </run>
-        </groups>
-
         <classes>
-            <class name="org.example.Task19.Task17.ClassA"></class>
-            <class name="org.example.Task19.Task18.ClassA"></class>
+            <class name = "org.example.Task17.aNavigateElements" />
+            <class name = "org.example.Task17.bNavigateForms" />
+            <class name = "org.example.Task17.cNavigateWidgets" />
+            <class name = "org.example.Task17.dNavigateInteractions" />
         </classes>
     </test>
 

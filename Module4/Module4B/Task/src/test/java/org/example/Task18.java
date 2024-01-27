@@ -1,5 +1,6 @@
 package org.example;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -89,17 +90,16 @@ public class Task18 {
             String cartTextOne = cartSummary.bikeLightHeader().getText();
             String cartTextTwo = cartSummary.backPackHeader().getText();
             String cartTextThree = cartSummary.redShirtHeader().getText();
-            String thanks = cartSummary.thanksText().getText();
             SoftAssert confirmText = new SoftAssert();
             confirmText.assertEquals(cartTextOne, "Sauce Labs Bike Light");
             confirmText.assertEquals(cartTextTwo, "Sauce Labs Backpack");
             confirmText.assertEquals(cartTextThree, "Test.allTheThings() T-Shirt (Red)");
-            System.out.println("The Cart Summary page is displayed");
+            Thread.sleep(3000);
             cartSummary.clickFinishButton().click();
+            String thanks = cartSummary.thanksText().getText();
             System.out.println("Final Thank you screen displayed");
             confirmText.assertEquals(thanks, "Thank you for your order!" );
             confirmText.assertAll();
-
             Thread.sleep(5000);
         }
         @AfterClass
