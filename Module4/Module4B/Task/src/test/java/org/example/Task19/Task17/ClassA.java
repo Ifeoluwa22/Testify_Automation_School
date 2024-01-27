@@ -10,7 +10,7 @@ public class ClassA {
     WebDriver driver = null;
 
 
-    @Test(groups = {"first"})
+    @Test(groups = {"homepage tests"})
     public void verifyHomepage() throws InterruptedException {
 
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Documents\\TESTIFY\\Testify_Automation_School\\Module4\\Module4B\\Task\\src\\chromedriver.exe");
@@ -23,7 +23,7 @@ public class ClassA {
         String HomePage = driver.findElement(By.cssSelector(".banner-image")).getText();
 
         assertHomepage.assertEquals(HomePage, "Selenium Online Training");
-        System.out.println("This is the homepage");
+        System.out.println("This is the homepage for demoQA");
         Thread.sleep(5000);
     }
 
