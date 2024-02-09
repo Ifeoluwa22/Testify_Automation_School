@@ -2,14 +2,14 @@ class Human:
     leg_count = 4
 
     def get_gender(self):
-        print("Unknown")
+        return "Unknown"
 
 
 class Man(Human):
     pass
 
 person = Man()
-person.get_gender()
+print(person.get_gender())
 
 
 # Create a class called Human
