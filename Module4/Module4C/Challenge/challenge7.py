@@ -1,4 +1,4 @@
-students = ["Temi", "Feyi", "Tamilore", "Uchechi", "Opolo", "Idrisa", "Damson", "Michaela", "Harvey", "Animashaun"]
+students = [12, 44, 67, 22, 13, 9, 47, 82, 658, 92, 53]
 
 
 def arrange(arr):
@@ -8,4 +8,4 @@ def arrange(arr):
 
 print(arrange(students))
 
-# Sort an array of strings in alphabetical order
+# Sort an array of numbers in descending order

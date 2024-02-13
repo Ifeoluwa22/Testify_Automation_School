@@ -7,6 +7,8 @@
     <list default="true" id="1a7cadd6-7e90-4a42-b678-fc85a0846c92" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../../Module3/3A_JavaScript/Coding Challenge/challenge2.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/3A_JavaScript/Coding Challenge/challenge2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Module4A/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Module4A/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Challenge/challenge7.py" beforeDir="false" afterPath="$PROJECT_DIR$/Challenge/challenge7.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Module4B/MODULE4B.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Module4B/Task/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Module4B/Task/.idea/compiler.xml" beforeDir="false" />
@@ -66,11 +68,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "dev",
-    "last_opened_file_path": "C:/Users/User/Documents/TESTIFY/Testify_Automation_School/Module4/Module4C"
+    "last_opened_file_path": "C:/Users/User/Documents/TESTIFY/Testify_Automation_School/Module4/Module4C/Challenge"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.challenge5">
-    <configuration name="challenge1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\TESTIFY\Testify_Automation_School\Module4\Module4C\Challenge" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.challenge10">
+    <configuration name="challenge10" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Module4C" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -82,7 +89,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Challenge/challenge1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Challenge/challenge10.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -91,7 +98,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="challenge2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="challenge6" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Module4C" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -103,7 +110,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Challenge/challenge2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Challenge/challenge6.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -112,7 +119,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="challenge3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="challenge7" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Module4C" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -124,7 +131,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Challenge/challenge3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Challenge/challenge7.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -133,7 +140,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="challenge4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="challenge8" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Module4C" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -145,7 +152,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Challenge/challenge4.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Challenge/challenge8.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,7 +161,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="challenge5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="challenge9" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Module4C" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -166,7 +173,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Challenge/challenge5.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Challenge/challenge9.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -198,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.challenge5" />
-        <item itemvalue="Python.challenge4" />
-        <item itemvalue="Python.challenge3" />
-        <item itemvalue="Python.challenge2" />
-        <item itemvalue="Python.challenge1" />
+        <item itemvalue="Python.challenge10" />
+        <item itemvalue="Python.challenge9" />
+        <item itemvalue="Python.challenge8" />
+        <item itemvalue="Python.challenge7" />
+        <item itemvalue="Python.challenge6" />
       </list>
     </recent_temporary>
   </component>
